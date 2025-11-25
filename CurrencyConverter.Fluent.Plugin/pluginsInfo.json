@@ -1,0 +1,11 @@
+{
+  "IsEnabled": true,
+  "InstalledVersion": "1.0.0.0",
+  "Name": "CurrencyConverter",
+  "DisplayName": "Currency Converter",
+  "Description": "Convert currencies using live exchange rates. Usage: '100 USD to EUR'",
+  "PublisherName": "Your Name",
+  "Version": "1.0.0.0",
+  "URL": "https://github.com/yourusername/CurrencyConverter.Fluent.Plugin/",
+  "IconGlyph": "\uE8AB"
+}

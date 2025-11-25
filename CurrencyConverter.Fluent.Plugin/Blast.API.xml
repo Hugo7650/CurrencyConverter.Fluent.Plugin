@@ -1,0 +1,1943 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Blast.API</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.Appearance.AppearanceUtils" -->
+        <member name="F:Blast.API.Appearance.AppearanceUtils._fluentSearchAppearanceUtils">
+            <summary>
+            Gets the current instance of <see cref="T:Blast.API.Core.Appearance.IAppearanceUtils"/> for this OS
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Blast.API.Appearance.AppearanceUtils._appearanceUtilsInstance">
+            <summary>
+            Gets the current instance of <see cref="T:Blast.API.Core.Appearance.IAppearanceUtils"/> for this OS
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Blast.API.Appearance.AppearanceUtils.UseGPU">
+            <summary>
+            Whether Fluent running on GPU
+            </summary>
+        </member>
+        <member name="P:Blast.API.Appearance.AppearanceUtils.UseMinimalisticUserInterface">
+            <summary>
+            Whether user requested minimalistic user interface
+            </summary>
+        </member>
+        <member name="F:Blast.API.Appearance.AppearanceUtils._iconsFontFamily">
+            <summary>
+            Gets the <see cref="T:Avalonia.Media.FontFamily"/> for glyph icons
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Blast.API.Appearance.AppearanceUtils.FluentSearchAppearanceUtils" -->
+        <!-- Badly formed XML comment ignored for member "P:Blast.API.Appearance.AppearanceUtils.AppearanceUtilsInstance" -->
+        <!-- Badly formed XML comment ignored for member "P:Blast.API.Appearance.AppearanceUtils.IconsFontFamily" -->
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.Controllers.Keyboard.KeyboardController" -->
+        <member name="F:Blast.API.Controllers.Keyboard.KeyboardController._keyboardControllerInstance">
+            <summary>
+            Gets the current instance of <see cref="T:Blast.API.Core.Controllers.Keyboard.IKeyboardController"/> for this OS
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Blast.API.Controllers.Keyboard.KeyboardController.KeyboardControllerInstance" -->
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.Controllers.Mouse.MouseController" -->
+        <member name="F:Blast.API.Controllers.Mouse.MouseController._mouseControllerInstance">
+            <summary>
+            The current instance of the <see cref="T:Blast.API.Core.Controllers.Mouse.IMouseController"/>
+            </summary>
+        </member>
+        <member name="M:Blast.API.Controllers.Mouse.MouseController.ClickOnScreen(System.Drawing.Rectangle,Blast.API.Core.Controllers.Mouse.MouseClickType,System.Boolean,System.Boolean)">
+            <summary>
+            Uses the mouse pointer to click on screen
+            </summary>
+            <param name="screenLocation">The rectangle representing the point to click on</param>
+            <param name="mouseClickType">The click type operation</param>
+            <param name="clickOnMiddle">Whether to click in the middle of the rectangle</param>
+            <param name="keepMousePosition"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Blast.API.Controllers.Mouse.MouseController.MouseControllerInstance" -->
+        <member name="T:Blast.API.Controllers.Speech.Speech">
+            <summary>
+            Defines attached properties that control speech mode indications in Fluent Search
+            </summary>
+        </member>
+        <member name="F:Blast.API.Controllers.Speech.Speech.EnableSpeechProperty">
+            <summary>
+            Enable speech mode for this code attached property
+            </summary>
+        </member>
+        <member name="F:Blast.API.Controllers.Speech.Speech.SpeechTextProperty">
+            <summary>
+            Speech text for this control attached property
+            </summary>
+        </member>
+        <member name="M:Blast.API.Controllers.Speech.Speech.GetEnableSpeech(Avalonia.Input.IInputElement)">
+            <summary>
+            Gets whether speech mode is enabled for this control
+            </summary>
+            <param name="element"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Controllers.Speech.Speech.SetEnableSpeech(Avalonia.Input.IInputElement,System.Boolean)">
+            <summary>
+            Sets whether speech mode is enabled for this control
+            </summary>
+            <param name="element"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Blast.API.Controllers.Speech.Speech.GetSpeechText(Avalonia.Input.IInputElement)">
+            <summary>
+            Gets the speech text, if null speech will be based on content
+            </summary>
+            <param name="element"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Controllers.Speech.Speech.SetSpeechText(Avalonia.Input.IInputElement,System.String)">
+            <summary>
+            Sets the speech text, if null speech will be based on content
+            </summary>
+            <param name="element"></param>
+            <param name="value"></param>
+        </member>
+        <member name="T:Blast.API.Controllers.Speech.SpeechUtils">
+            <summary>
+            Speech util methods
+            </summary>
+        </member>
+        <member name="M:Blast.API.Controllers.Speech.SpeechUtils.GetSpeechValue(System.Object)">
+            <summary>
+            Get normalized speech value
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.FileSystem.DirectoryFinder" -->
+        <member name="F:Blast.API.FileSystem.DirectoryFinder._directoryFinderInstance">
+            <summary>
+            Gets the current instance of <see cref="T:Blast.API.Core.FileSystem.IOsDirectoryFinder"/> for this OS
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Blast.API.FileSystem.DirectoryFinder.DirectoryFinderInstance" -->
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.FileSystem.FileUtils" -->
+        <member name="F:Blast.API.FileSystem.FileUtils._fileManagerControllerInstance">
+            <summary>
+                Gets an instance of <see cref="T:Blast.API.Core.FileSystem.IFileManagerController" /> for this OS
+            </summary>
+        </member>
+        <member name="F:Blast.API.FileSystem.FileUtils._fileUtilsInstance">
+            <summary>
+                Gets the current instance of <see cref="T:Blast.API.Core.FileSystem.IFileUtils" /> for this OS
+            </summary>
+        </member>
+        <member name="P:Blast.API.FileSystem.FileUtils.ThirdPartyFileExplorer">
+            <summary>
+                A third party file explorer that will be used
+            </summary>
+        </member>
+        <member name="P:Blast.API.FileSystem.FileUtils.IsOnlineFileDownloadEnabled">
+            <summary>
+            Whether user enabled online file download
+            </summary>
+        </member>
+        <member name="M:Blast.API.FileSystem.FileUtils.CanDownloadFile(System.String)">
+            <summary>
+            Checks if files is available for offline use or user enabled online file downloads
+            </summary>
+        </member>
+        <member name="M:Blast.API.FileSystem.FileUtils.OpenFileInParentDirectory(System.String)">
+            <summary>
+            Opens the file folder in the the default file manager
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.FileSystem.FileUtils.OpenFileOrDirectory(System.String,Blast.API.Core.FileSystem.OpenFileOptions,System.String)">
+            <summary>
+                Opens the file on the specified path using the default program
+            </summary>
+            <param name="filePath">The specified file path</param>
+            <param name="openFileOption">The option used to open the file</param>
+            <param name="args">Arguments for starting the file</param>
+        </member>
+        <member name="M:Blast.API.FileSystem.FileUtils.DeleteFileOrDirectory(System.String,System.Boolean)">
+            <summary>
+                Tries to delete the specified file or directory
+            </summary>
+            <param name="path">The specified file or directory</param>
+            <param name="deletePermanently">Whether to delete the file permanently</param>
+            <returns>Whether the operation succeeded</returns>
+        </member>
+        <member name="M:Blast.API.FileSystem.FileUtils.GetFileExtension(System.String,System.Boolean)">
+            <summary>
+                Gets the extension of the specified file name
+            </summary>
+            <param name="fileName">The specified file name</param>
+            <param name="isDirectory">Whether the file is a directory</param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.FileSystem.FileUtils.IsDirectory(System.String)">
+            <summary>
+                Checks whether the specified path is a directory
+            </summary>
+            <param name="filePath">The specified path</param>
+            <returns>Whether the path is a directory</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Blast.API.FileSystem.FileUtils.FileManagerControllerInstance" -->
+        <!-- Badly formed XML comment ignored for member "P:Blast.API.FileSystem.FileUtils.FileUtilsInstance" -->
+        <member name="T:Blast.API.Graphics.BitmapUtils">
+            <summary>
+            Utilities for bitmaps
+            </summary>
+        </member>
+        <member name="M:Blast.API.Graphics.BitmapUtils.GetImageResultFromUrl(System.String)">
+            <summary>
+            Gets a <see cref="T:Blast.Core.Results.BitmapImageResult"/> from the specified URL
+            </summary>
+        </member>
+        <member name="M:Blast.API.Graphics.BitmapUtils.ConvertToAvaloniaBitmap(Blast.Core.Results.BitmapImageResult)">
+            <summary>
+            Converts the System.Drawing bitmap to Avalonia bitmap
+            </summary>
+        </member>
+        <member name="M:Blast.API.Graphics.BitmapUtils.ConvertToNormalBitmap(Blast.Core.Results.BitmapImageResult)">
+            <summary>
+            Converts the Avalonia bitmap to System.Drawing bitmap
+            </summary>
+            <param name="bitmapImageResult"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.Graphics.ScreenUtils" -->
+        <member name="F:Blast.API.Graphics.ScreenUtils._screenUtilsInstance">
+            <summary>
+            Gets the current instance of <see cref="T:Blast.API.Core.Graphics.IScreenUtils"/> for this OS
+            </summary>
+        </member>
+        <member name="M:Blast.API.Graphics.ScreenUtils.GetImageInOppositeTheme(System.Drawing.Bitmap)">
+            <summary>
+            Gets the image in the opposite color
+            </summary>
+            <param name="bitmap"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Graphics.ScreenUtils.GetScreenShot(System.Drawing.Rectangle,System.Drawing.Rectangle,System.Boolean,System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Get a screen shot for current focused screen 
+            </summary>
+            <param name="rectangleToScreenShot">The rectangle to screen shot, can be the whole screen</param>
+            <param name="rectToIgnore">ScreenLocation to ignore</param>
+            <param name="saveFile">Whether to save the file to disk</param>
+            <param name="filePath">The file path location on drive if it is saved</param>
+            <param name="imageFormat">The format of the image, eg Jpeg, Tiff</param>
+            <returns>Bitmap Image result of the screen shot</returns>
+        </member>
+        <member name="M:Blast.API.Graphics.ScreenUtils.SaveImageToDisk(Blast.Core.Results.BitmapImageResult,System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Saves the specified bitmap image to disk and update the image result, may crash if the specified path is
+            invalid or does not have permission
+            </summary>
+            <param name="filePath">Where to save the image</param>
+            <param name="imageFormat">The format to save the image</param>
+            <param name="imageResult">The bitmap image result</param>        
+        </member>
+        <member name="M:Blast.API.Graphics.ScreenUtils.Center(System.Drawing.Rectangle)">
+            <summary>
+            Gets the center of the rectangle
+            </summary>
+        </member>
+        <member name="M:Blast.API.Graphics.ScreenUtils.IsClose(System.Drawing.Point,System.Drawing.Point,System.Int32)">
+            <summary>
+            Whether p1 close to p2
+            </summary>
+        </member>
+        <member name="M:Blast.API.Graphics.ScreenUtils.AsPixelPoint(System.Drawing.Point)">
+            <summary>
+            Converts <see cref="T:System.Drawing.Point"/> to Avalonia <see cref="T:Avalonia.PixelPoint"/>
+            </summary>
+            <param name="point"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Graphics.ScreenUtils.GetGrayScaleImage(System.Drawing.Bitmap)">
+            <summary>
+            Gets gray scale version of the original image
+            </summary>
+            <param name="original"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Graphics.ScreenUtils.GetBitmapDifference(System.Drawing.Bitmap,System.Drawing.Bitmap)">
+            <summary>
+            Get the difference bitmap of bmp1 and bmp2
+            </summary>
+            <param name="bmp1"></param>
+            <param name="bmp2"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Graphics.ScreenUtils.Sharpen(System.Drawing.Bitmap)">
+            <summary>
+            Sharpens an image.
+            http://stackoverflow.com/questions/903632/sharpen-on-a-bitmap-using-c-sharp
+            </summary>
+            <param name="image"></param>
+            <returns></returns> //TODO: improve this, speed wise
+        </member>
+        <member name="M:Blast.API.Graphics.ScreenUtils.CloneImage(System.Drawing.Bitmap)">
+            <summary>
+            Clones a bitmap using DrawImage.
+            </summary>
+            <param name="bmp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Graphics.ScreenUtils.Subtract(System.Drawing.Rectangle,System.Drawing.Rectangle)">
+            <summary>
+            Subtract rectangles
+            </summary>
+            <param name="minuend"></param>
+            <param name="subtrahend"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Blast.API.Graphics.ScreenUtils.ScreenUtilsInstance" -->
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.Hotkeys.HotkeyManager" -->
+        <member name="F:Blast.API.Hotkeys.HotkeyManager._hotkeyManagerInstance">
+            <summary>
+            Gets the current instance of <see cref="T:Blast.API.Core.Interfaces.IHotkeyManager"/> for this OS
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Blast.API.Hotkeys.HotkeyManager.HotkeyManagerInstance" -->
+        <member name="T:Blast.API.Hotkeys.HotkeyUtils">
+            <summary>
+            Hotkey utilities
+            </summary>
+        </member>
+        <member name="M:Blast.API.Hotkeys.HotkeyUtils.GestureMatches(Avalonia.Input.KeyGesture,Avalonia.Input.KeyEventArgs)">
+            <summary>
+            Whether the key gesture matches the <see cref="T:Avalonia.Input.KeyEventArgs"/>
+            </summary>
+        </member>
+        <member name="M:Blast.API.Hotkeys.HotkeyUtils.ChangeRegisteredHotkey(Blast.API.Core.Hotkeys.Hotkey,System.Collections.Generic.List{Blast.API.Core.Controllers.Keyboard.VirtualKey})">
+            <summary>
+            Changes the hotkey keys, if the hotkey is registered on the HotkeyManager instance then it will be changed there
+            </summary>
+            <param name="hotkey">The specified hotkey</param>
+            <param name="keys">The new keys</param>
+            <returns>Whether the hotkey manager successfully registered the new keys</returns>
+        </member>
+        <member name="M:Blast.API.Hotkeys.HotkeyUtils.UnregisterIfRegistered(Blast.API.Core.Hotkeys.Hotkey)">
+            <summary>
+            Unregisters an hotkey if it's already registered in the HotkeyManager
+            </summary>
+            <param name="hotkey"></param>
+        </member>
+        <member name="M:Blast.API.Hotkeys.HotkeyUtils.RegisterOrClear(Blast.API.Core.Hotkeys.Hotkey)">
+            <summary>
+            Tries to register the specified hotkey if it does not register it's keys will be cleared
+            </summary>
+            <param name="hotkey">The specified hotkey</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.OperationSystem.OsUtils" -->
+        <member name="M:Blast.API.OperationSystem.OsUtils.GetCurrentOperatingSystem">
+            <summary>
+            This methods checks the current operating system this process is running on
+            </summary>
+            <returns>Enum representing supported operating system by Blast API</returns>
+            <exception cref="T:System.NotSupportedException">Thrown when the current operating system is not supported</exception>
+        </member>
+        <member name="M:Blast.API.OperationSystem.OsUtils.GetOsSettingsProvider">
+            <summary>
+            Gets the current instance of <see cref="T:Blast.API.Core.OperationSystem.IOsSettingsProvider"/> for this OS
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.OperationSystem.OsUtils.GetOsOperationProvider">
+            <summary>
+            Gets the current instance of <see cref="T:Blast.API.Core.OperationSystem.IOsSettingsProvider"/> for this OS
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.OperationSystem.WindowUtils" -->
+        <member name="F:Blast.API.OperationSystem.WindowUtils._windowUtilsInstance">
+            <summary>
+            Windows utils instance
+            </summary>
+        </member>
+        <member name="M:Blast.API.OperationSystem.WindowUtils.MakeWindowFullScreen(Blast.Core.Interfaces.IViewWindow)">
+            <summary>
+            
+            </summary>
+            <param name="viewWindow"></param>
+        </member>
+        <member name="M:Blast.API.OperationSystem.WindowUtils.EnableWindowTransparency(Blast.Core.Interfaces.IViewWindow)">
+            <summary>
+            
+            </summary>
+            <param name="viewWindow"></param>
+        </member>
+        <member name="M:Blast.API.OperationSystem.WindowUtils.StartWindowEssential(System.Action,System.Action,Blast.API.Core.UI.IUiDispatcher,System.String)">
+            <summary>
+            Starts essential Windows
+            </summary>
+            <param name="doubleClickAction"></param>
+            <param name="singleClickAction"></param>
+            <param name="uiThread"></param>
+            <param name="windowTitle"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Blast.API.OperationSystem.WindowUtils.WindowUtilsInstance" -->
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.Processes.BackgroundProcessUtils" -->
+        <member name="F:Blast.API.Processes.BackgroundProcessUtils._backgroundProcess">
+            <summary>
+            Background process instance
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Blast.API.Processes.BackgroundProcessUtils.BackgroundProcess" -->
+        <member name="T:Blast.API.Processes.ProcessInformationCenter">
+            <summary>
+                This class is used to get information about specific processes that cannot be attained by runtime
+            </summary>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessInformationCenter.GetDisplayName(Blast.Core.Objects.ProcessInfo)">
+            <summary>
+            Gets the displayed name of the process
+            </summary>
+            <param name="processInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessInformationCenter.GetProcessOfflineInfo(Blast.Core.Objects.ProcessInfo)">
+            <summary>
+                Returns the offline information for the specified processes
+            </summary>
+            <param name="processInfo">The specified process</param>
+            <returns>Offline information for the specified processes</returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessInformationCenter.IsProcessNameCached(System.String)">
+            <summary>
+                Returns whether the ProcessInformationCenter contains offline information regarding the specified process name
+            </summary>
+            <param name="processName">The specified process name</param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessInformationCenter.TryGetProcessOfflineInfoByName(System.String,System.Collections.Generic.List{Blast.API.Core.Processes.ProcessOfflineInfo}@)">
+            <summary>
+            Tries to get the ProcessOfflineInfo for the process name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessInformationCenter.GetProcessOfflineInfoForProcessFile(System.String)">
+            <summary>
+                Returns the offline information for the specified process name
+            </summary>
+            <param name="processPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessInformationCenter.GetProcessOfflineInfoForExtension(System.String)">
+            <summary>
+                Gets offline processes for extension
+            </summary>
+            <param name="extension">The extension</param>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessInformationCenter.AddOrUpdateProcessOfflineInfo(Blast.API.Core.Processes.ProcessOfflineInfo)">
+            <summary>
+            Adds or updates the process offline info
+            </summary>
+            <param name="processOfflineInfo"></param>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessInformationCenter.AddEmptyProcessInfo(System.String,System.String)">
+            <summary>
+                Adds empty process information to the offline information center
+            </summary>
+            <param name="processName">The process name</param>
+            <param name="processPath">The process path</param>
+        </member>
+        <member name="T:Blast.API.Processes.ProcessManager">
+            <summary>
+                This class manages every process switching and notify when changes happens
+            </summary>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessManager.GetViewWindows">
+            <summary>
+            Gets the view windows currently registered
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessManager.InitiateProcessManager">
+            <inheritdoc />
+        </member>
+        <member name="P:Blast.API.Processes.ProcessManager.OurProcess">
+            <summary>
+                The processes that initiate the ProcessManager class and all of Blast's APIs
+                This process usually is the GUI of Blast
+            </summary>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessManager.GetCurrentProcess">
+            <summary>
+                Gets the most recently focused process that is NOT our process
+            </summary>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessManager.GetProcessInfoForName(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Processes.ProcessManager.FocusViewWindow(Blast.Core.Interfaces.IViewWindow,System.Boolean)">
+            <summary>
+                Focused the specified view window and changes the OurProcess Window ID
+            </summary>
+            <param name="viewWindow">The specified view window</param>
+            <param name="openIfMinimized"></param>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessManager.IsOurProcess(Blast.Core.Objects.ProcessInfo)">
+            <inheritdoc />
+        </member>
+        <member name="P:Blast.API.Processes.ProcessManager.IsOurProcessVisible">
+            <summary>
+                Informs whether the program that initiated the process manager (OurProcess) is currently visible
+            </summary>
+        </member>
+        <member name="P:Blast.API.Processes.ProcessManager.IsOurProcessFocused">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Processes.ProcessManager.GetRunningApplications">
+            <summary>
+                Returns the current list of processes with GUI tracked by process manager
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:Blast.API.Processes.ProcessManager.ProcessSwitchedEvent">
+            <summary>
+                Event handler that get invoked when FocusWindow is being used
+            </summary>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessManager.CloseProcess(Blast.Core.Objects.ProcessInfo,System.Boolean)">
+            <summary>
+                Closes the specified process and updates the process list
+            </summary>
+            <param name="processInfo">The specified process</param>
+            <param name="killProcess"></param>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessManager.SwitchToProcess(Blast.Core.Objects.ProcessInfo,System.Object)">
+            <summary>
+                Switches to the specified process and fire the ProcessSwitchEvent
+            </summary>
+            <param name="processInfo">The specified process to switch to</param>
+            <param name="sender">The caller of the switch process function</param>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessManager.RegisterViewWindow(Blast.Core.Interfaces.IViewWindow)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Processes.ProcessManager.UnregisterViewWindow(Blast.Core.Interfaces.IViewWindow)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Processes.ProcessManager.StartNewProcess(System.String,System.String,Blast.API.Core.FileSystem.OpenFileOptions,System.Boolean)">
+            <summary>
+                Opens new process and adds it to the process manager list
+            </summary>
+            <param name="programPath">The program's file path</param>
+            <param name="programArgs">The program's start arguments if there are any</param>
+            <param name="runProcessOption">Options to run the process</param>
+            <param name="cacheProcess">Whether the process will have a GUI and is needed to be cached</param>
+        </member>
+        <member name="P:Blast.API.Processes.ProcessManager.FocusedViewWindow">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Processes.ProcessManager.UpdateProcessInfoLoop(System.Action,System.Int32)">
+            <summary>
+                Checks processes info using the action
+            </summary>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessManager.FillProcessList">
+            <summary>
+                Fills the process list with process with gui only
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.Processes.ProcessUtils" -->
+        <member name="F:Blast.API.Processes.ProcessUtils._processUtilsInstance">
+            <summary>
+                The process utils instance
+            </summary>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.GetManagerInstance">
+            <summary>
+                Return the current instance of the process manager
+            </summary>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.GetProcessInfoToProcessWithGui(System.Boolean)">
+            <summary>
+                Returns which of the list of processes has graphical user interface
+            </summary>
+            <param name="extractInfo"></param>
+            <returns>Enumeration of the processes who has graphical user interface</returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.GetOurProcessPath">
+            <summary>
+            Gets the path of our current process
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.IsProcessMinimized(Blast.Core.Objects.ProcessInfo)">
+            <summary>
+                Checks whether the process is minimized
+            </summary>
+            <param name="processInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.IsProcessMaximized(Blast.Core.Objects.ProcessInfo)">
+            <summary>
+                Checks whether the process is maximized
+            </summary>
+            <param name="processInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.IsProcessFullScreen(Blast.Core.Objects.ProcessInfo)">
+            <summary>
+            Checks whether the process is in full screen mode
+            </summary>
+            <param name="processInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.SwitchToProcess(Blast.Core.Objects.ProcessInfo)">
+            <summary>
+                Switches to the specified function
+            </summary>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.ProcessHasGraphicalInterface(Blast.Core.Objects.ProcessInfo)">
+            <summary>
+                Returns whether the specified process has graphical user interface
+            </summary>
+            <param name="processInfo">The specified process</param>
+            <returns>Whether the specified process has graphical user interface</returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.UpdateProcessTitle(Blast.Core.Objects.ProcessInfo)">
+            <summary>
+                Returns the window title of the specified process
+            </summary>
+            <param name="processInfo">The specified process</param>
+            <returns>The process title</returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.SetForegroundProcess(Blast.Core.Objects.ProcessInfo)">
+            <summary>
+                Set the specified process as the foreground process of the current operating system
+            </summary>
+            <param name="processInfo">The specified process</param>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.FocusViewWindow(Blast.Core.Interfaces.IViewWindow,System.Boolean)">
+            <summary>
+                Focused the specified view window
+            </summary>
+            <param name="viewWindow">The specified view window</param>
+            <param name="openIfMinimized">Open if minimized</param>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.GetProcessWindowRectangle(Blast.Core.Objects.ProcessInfo)">
+            <summary>
+                Returns a rectangle that represents the specified window's position and size
+            </summary>
+            <param name="processInfo">The specified process</param>
+            <returns>Process current window rectangle</returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.GetCurrentFocusedProcess">
+            <summary>
+                Gets the currently focused process
+            </summary>
+            <returns>Currently focused process</returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.GetCurrentFocusedProcessEnriched">
+            <summary>
+            Gets the currently focused process with all it's information (e.g. name, path)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.CheckIfExited(Blast.Core.Objects.ProcessInfo)">
+            <summary>
+                Checks whether the specified process (it's window) has exited
+            </summary>
+            <param name="processInfo">The specified process</param>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.CreateProcessInfo(System.Diagnostics.Process)">
+            <summary>
+                Creates instance of process info with all the relevant information
+            </summary>
+            <param name="process"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.GetProcessIcon(Blast.Core.Objects.ProcessInfo)">
+            <summary>
+                Gets and updates the process icon
+            </summary>
+            <param name="processInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.GetCurrentInstallationType">
+            <summary>
+            Gets the current installation type
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Processes.ProcessUtils.CloseProcess(Blast.Core.Objects.ProcessInfo)">
+            <summary>
+                Kills the specified process in the process info
+            </summary>
+            <param name="processInfo">The specified process info</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Blast.API.Processes.ProcessUtils.ProcessUtilsInstance" -->
+        <member name="T:Blast.API.Search.ActionSearchOperation">
+            <summary>
+            Search operation that triggers an action once it's selected
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.ActionSearchOperation.#ctor(System.Func{Blast.Core.Interfaces.ISearchResult,System.Threading.Tasks.ValueTask{Blast.Core.Interfaces.IHandleResult}})">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Search.PathUtils">
+            <summary>
+                Utilities for file paths
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.PathUtils.AddBackSlash(System.String)">
+            <summary>
+                Adds back slash to the path
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Search.PathUtils.AddSlash(System.String)">
+            <summary>
+            ADds slash to the path
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.Search.SearchHelper" -->
+        <member name="M:Blast.API.Search.SearchHelper.GetInvertedLanguageText(System.String)">
+            <summary>
+            Returns the inverted string from the specified data language to English
+            </summary>
+            <param name="data">The specified data</param>
+            <returns>Inverted string in English</returns>
+        </member>
+        <member name="M:Blast.API.Search.SearchHelper.GetInCurrentKeyboardLanguage(System.String)">
+            <summary>
+            Gets the <see cref="!:data"/> in the current keyboard language
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.SearchHelper.SearchBlind(System.String,System.String)">
+            <summary>
+            Search through data ignoring capital letters
+            </summary>
+            <param name="data">The string to search on</param>
+            <param name="search">The specified search string</param>
+            <returns>Whether data contains search, ignoring capital letters</returns>
+        </member>
+        <member name="M:Blast.API.Search.SearchHelper.SearchFlatten(System.String,System.String)">
+            <summary>
+            Search through data ignoring spaces
+            </summary>
+            <param name="data">The string to search on</param>
+            <param name="search">The specified search string</param>
+            <returns>Whether data contains search, ignoring spaces</returns>
+        </member>
+        <member name="M:Blast.API.Search.SearchHelper.SearchTokens(System.String,System.String,System.Boolean)">
+            <summary>
+            Search through data tokens (splitted by either dot or space) not by their order, ignoring capital letters
+            Tokens are at least 2 letters 
+            </summary>
+            <param name="data">The string to search on</param>
+            <param name="search">The specified search string</param>
+            <param name="strictSearch">Whether every word in search should be in data/></param>
+            <returns>Whether the data's tokens contains all of search' tokens not necessarily by their order</returns>
+        </member>
+        <member name="M:Blast.API.Search.SearchHelper.SearchTokens(System.String,System.String,System.Boolean,System.Boolean,System.Collections.Generic.ICollection{System.ValueTuple{System.Int32,System.Int32}})">
+            <summary>
+            Search through data tokens (splitted by either dot or space) not by their order, ignoring capital letters
+            Tokens are at least 2 letters 
+            </summary>
+            <param name="data">The string to search on</param>
+            <param name="search">The specified search string</param>
+            <param name="strictSearch">Whether every word in search should be in data/></param>
+            <param name="useFuzzySearch">Whether to match by every character and not every word</param>
+            <param name="highlights"></param>
+            <returns>Whether the data's tokens contains all of search' tokens not necessarily by their order</returns>
+        </member>
+        <member name="M:Blast.API.Search.SearchHelper.IsStartOfToken(System.ReadOnlySpan{System.Char},System.Int32)">
+            <summary>
+            Whether the index is at a start of a new token
+            </summary>
+            <param name="data"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Search.SearchHelper.SearchAny(System.String,System.String)">
+            <summary>
+            Searches the specified search through data using all of SearchHelpers methods
+            </summary>
+            <param name="data">The string to search on</param>
+            <param name="search">The specified search string</param>
+            <returns>Whether data contains search by any means</returns>
+        </member>
+        <member name="M:Blast.API.Search.SearchHelper.Flatten(System.String)">
+            <summary>
+            Flatten the string, removing anything other than letters or digits
+            </summary>
+            <param name="text">The specified string</param>
+            <returns>The flattened string</returns>
+        </member>
+        <member name="M:Blast.API.Search.SearchHelper.ToAlphaNumeric(System.String)">
+            <summary>
+            Returns representation of the input string with only digits and letters
+            </summary>
+        </member>
+        <member name="T:Blast.API.Search.SearchMapping">
+            <summary>
+                Search mapping
+            </summary>
+        </member>
+        <member name="P:Blast.API.Search.SearchMapping.Input">
+            <summary>
+                The input of the search mapping
+            </summary>
+        </member>
+        <member name="P:Blast.API.Search.SearchMapping.Output">
+            <summary>
+                The output of the search mapping
+            </summary>
+        </member>
+        <member name="P:Blast.API.Search.SearchMapping.Description">
+            <summary>
+            Description of the search mapping
+            </summary>
+        </member>
+        <member name="P:Blast.API.Search.SearchMapping.IsEnabled">
+            <summary>
+                Whether the mapping is enabled
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.SearchMapping.Deconstruct(System.String@,System.String@,System.Boolean@)">
+            <summary>
+                Deconstructor
+            </summary>
+            <param name="input"></param>
+            <param name="output"></param>
+            <param name="isEnabled"></param>
+        </member>
+        <member name="M:Blast.API.Search.SearchMapping.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Search.SearchMapping.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Search.SearchOperations.CopySearchOperation">
+            <summary>
+            Built-in search operation for copy the search result name
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.SearchOperations.CopySearchOperation.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Search.SearchOperations.CopySearchOperationSelfRun">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Search.SearchOperations.CopySearchOperationSelfRun.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Search.SearchOperations.CopySearchOperationSelfRun.HandleSearchResult(Blast.Core.Interfaces.ISearchResult)">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Search.SearchOperations.PasteSearchOperation">
+            <summary>
+            Built-in search operation for copy the search result name
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.SearchOperations.PasteSearchOperation.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Search.SearchOperations.PasteSearchOperationSelfRun">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Search.SearchOperations.PasteSearchOperationSelfRun.#ctor(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Search.SearchOperations.PasteSearchOperationSelfRun.HandleSearchResult(Blast.Core.Interfaces.ISearchResult)">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Search.ISearchResultsHistoryManager`1">
+            <summary>
+            Manages search results history of type
+            </summary>
+            <typeparam name="T">Search result type</typeparam>
+        </member>
+        <member name="M:Blast.API.Search.ISearchResultsHistoryManager`1.TryGetHistoryResult(System.String)">
+            <summary>
+            Tries to get all the relevant search results for the searched text from the history
+            </summary>
+            <param name="searchedText">The searched text</param>
+            <returns>All the relevant search results</returns>
+        </member>
+        <member name="M:Blast.API.Search.ISearchResultsHistoryManager`1.AddSearchResultToHistory(`0)">
+            <summary>
+            Add a search result to the history
+            </summary>
+            <param name="searchResult">The search result</param>
+        </member>
+        <member name="T:Blast.API.Search.SearchResultsHistoryManager`1">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Search.SearchResultsHistoryManager`1.#ctor(System.Boolean)">
+            <summary>
+            Creates search result history manager
+            </summary>
+            <param name="cacheResults"></param>
+        </member>
+        <member name="M:Blast.API.Search.SearchResultsHistoryManager`1.TryGetHistoryResult(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Search.SearchResultsHistoryManager`1.AddSearchResultToHistory(`0)">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Search.SearchResultsCacheManager">
+            <summary>
+            Class used for managing a cache for search results
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.SearchResultsCacheManager.#ctor">
+            <summary>
+            Creates search result cache manager
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.SearchResultsCacheManager.CacheResult(Blast.Core.Objects.SearchRequest,Blast.Core.Interfaces.ISearchResult)">
+            <summary>
+            Caches the specified searchResult for the specified <see cref="T:Blast.Core.Objects.SearchRequest"/>
+            </summary>
+            <param name="searchRequest">The search request</param>
+            <param name="searchResult">The search result returned by the search request</param>
+        </member>
+        <member name="M:Blast.API.Search.SearchResultsCacheManager.GetCachedResults(Blast.Core.Objects.SearchRequest)">
+            <summary>
+            Gets the cached search results for the specified searchRequest
+            </summary>
+            <param name="searchRequest">The search request</param>
+            <returns>Cached results for the searchRequest</returns>
+        </member>
+        <member name="T:Blast.API.Search.SearchResults.LoadingSearchResult">
+            <summary>
+                This search result is used to tell the user that an app is loading/indexing
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.SearchResults.LoadingSearchResult.GetIndexingSearchResult(System.String,System.String)">
+            <summary>
+                Get an indexing search result that indicates that your app is still indexing
+            </summary>
+            <param name="appName">The search app name</param>
+            <param name="searchedText">The searched text</param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Search.SearchResults.LoadingSearchResult.OnSelectedSearchResultChanged">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Search.SearchTags.SearchTagSetting">
+            <summary>
+            Search tag setting
+            </summary>
+        </member>
+        <member name="P:Blast.API.Search.SearchTags.SearchTagSetting.Tag">
+            <summary>
+            The search tag
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.SearchTags.SearchTagSetting.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Search.SearchTags.SearchTagSetting.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Search.SearchTags.SearchTagsManager">
+            <summary>
+            The search tags manager is used for everything related to search tags
+            All known search tags are available only to it
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.SearchTags.SearchTagsManager.GetAllTags">
+            <summary>
+            Gets all the registered search tags
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Blast.API.Search.SearchTags.SearchTagsManager.IgnoredSearchTags">
+            <summary>
+            Ignored search tags
+            </summary>
+        </member>
+        <member name="P:Blast.API.Search.SearchTags.SearchTagsManager.PrioritizedSearchTags">
+            <summary>
+            Prioritized search tags
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.SearchTags.SearchTagsManager.TryAdd(Blast.Core.Results.SearchTag,System.Boolean,System.Boolean)">
+            <summary>
+            Try add the search tag
+            </summary>
+            <param name="searchTag"></param>
+            <param name="prioritize"></param>
+            <param name="isFirstClass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Search.SearchTags.SearchTagsManager.RemoveForSearchApplication(Blast.Core.Objects.SearchApplicationInfo)">
+            <summary>
+            Remove all search tags that has <see cref="P:Blast.Core.Results.SearchTag.RelevantSearchAppInfo"/> that matches the specified one
+            </summary>
+            <param name="searchApplicationInfo">The relevant search app info</param>
+        </member>
+        <member name="M:Blast.API.Search.SearchTags.SearchTagsManager.Remove(System.String)">
+            <summary>
+            Removes the search tag
+            </summary>
+            <param name="tag"></param>
+        </member>
+        <member name="M:Blast.API.Search.SearchTags.SearchTagsManager.RemoveAllWithId(System.Object)">
+            <summary>
+            Remove all search tags that has <see cref="!:id"/> as their <see cref="P:Blast.Core.Results.SearchTag.TagIdentifier"/>
+            </summary>
+            <param name="id">The tag identifier</param>
+        </member>
+        <member name="M:Blast.API.Search.SearchTags.SearchTagsManager.SuggestSearchTags(System.String)">
+            <summary>
+            Suggest search tags based on <see cref="!:search"/>
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.SearchTags.SearchTagsManager.UpdateTagsForApplicationInfo(Blast.Core.Objects.SearchApplicationInfo)">
+            <summary>
+            Updates all the relevant search tags for an application info
+            </summary>
+            <param name="applicationInfo"></param>
+        </member>
+        <member name="M:Blast.API.Search.SearchTags.SearchTagsManager.TryGetTagForName(System.String)">
+            <summary>
+            Tries to get the search tag by it's value
+            </summary>
+            <param name="searchTag">The search tag value</param>
+            <returns>Matching search tag, if not found <see cref="P:Blast.Core.Results.SearchTag.Empty"/> will be returned</returns>
+        </member>
+        <member name="T:Blast.API.Search.SearchTags.SearchTagsUtils">
+            <summary>
+                Util methods for <see cref="T:Blast.Core.Results.SearchTag" />
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.SearchTags.SearchTagsUtils.IsEmpty(Blast.Core.Results.SearchTag)">
+            <summary>
+                Checks whether the search tag is empty
+            </summary>
+            <param name="searchTag"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.Search.SearchWindow" -->
+        <member name="T:Blast.API.Search.SpanExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.SpanExtensions.Split(System.ReadOnlySpan{System.Char},System.Boolean)">
+            <summary>
+            Returns a type that allows for enumeration of each element within a split span
+            using a single space as a separator character.
+            </summary>
+            <param name="span">The source span to be enumerated.</param>
+            <param name="returnsChars"></param>
+            <returns>Returns a <see cref="T:Blast.API.Search.SpanSplitEnumerator`1"/>.</returns>
+        </member>
+        <member name="M:Blast.API.Search.SpanExtensions.Split(System.ReadOnlySpan{System.Char},System.Char)">
+            <summary>
+            Returns a type that allows for enumeration of each element within a split span
+            using the provided separator character.
+            </summary>
+            <param name="span">The source span to be enumerated.</param>
+            <param name="separator">The separator character to be used to split the provided span.</param>
+            <returns>Returns a <see cref="T:Blast.API.Search.SpanSplitEnumerator`1"/>.</returns>
+        </member>
+        <member name="M:Blast.API.Search.SpanExtensions.Split(System.ReadOnlySpan{System.Char},System.String)">
+            <summary>
+            Returns a type that allows for enumeration of each element within a split span
+            using the provided separator string.
+            </summary>
+            <param name="span">The source span to be enumerated.</param>
+            <param name="separator">The separator string to be used to split the provided span.</param>
+            <returns>Returns a <see cref="T:Blast.API.Search.SpanSplitEnumerator`1"/>.</returns>
+        </member>
+        <member name="T:Blast.API.Search.SpanSplitEnumerator`1">
+            <summary>
+            <see cref="T:Blast.API.Search.SpanSplitEnumerator`1"/> allows for enumeration of each element within a <see cref="T:System.ReadOnlySpan`1"/>
+            that has been split using a provided separator.
+            </summary>
+        </member>
+        <member name="M:Blast.API.Search.SpanSplitEnumerator`1.GetEnumerator">
+            <summary>
+            Returns an enumerator that allows for iteration over the split span.
+            </summary>
+            <returns>Returns a <see cref="T:Blast.API.Search.SpanSplitEnumerator`1"/> that can be used to iterate over the split span.</returns>
+        </member>
+        <member name="P:Blast.API.Search.SpanSplitEnumerator`1.Current">
+            <summary>
+            Returns the current element of the enumeration.
+            </summary>
+            <returns>Returns a <see cref="T:System.Range"/> instance that indicates the bounds of the current element withing the source span.</returns>
+        </member>
+        <member name="M:Blast.API.Search.SpanSplitEnumerator`1.MoveNext">
+            <summary>
+            Advances the enumerator to the next element of the enumeration.
+            </summary>
+            <returns><see langword="true"/> if the enumerator was successfully advanced to the next element; <see langword="false"/> if the enumerator has passed the end of the enumeration.</returns>
+        </member>
+        <member name="T:Blast.API.Settings.ActionSettingButton">
+            <summary>
+            Action setting used to show a clickable button
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.ActionSettingButton.Information">
+            <summary>
+            Information showed next to the button
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.ActionSettingButton.Text">
+            <summary>
+            The button's text
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.ActionSettingButton.Action">
+            <summary>
+            The action that will run when the button is clicked (in the UI thread)
+            </summary>
+        </member>
+        <member name="E:Blast.API.Settings.ActionSettingButton.ActionTriggered">
+            <summary>
+            Used to trigger the event without user's interaction
+            </summary>
+        </member>
+        <member name="E:Blast.API.Settings.ActionSettingButton.PropertyChanged">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.ActionSettingButton.TriggerAction">
+            <summary>
+            Trigger the action flow of this setting
+            </summary>
+        </member>
+        <member name="T:Blast.API.Settings.CollectionSettingManager`1">
+            <inheritdoc />
+        </member>
+        <member name="P:Blast.API.Settings.CollectionSettingManager`1.SuggestionHeader">
+            <summary>
+                The suggestion list header
+            </summary>
+        </member>
+        <member name="M:Blast.API.Settings.CollectionSettingManager`1.GetDefaultValue">
+            <summary>
+                Default value for the list
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.CollectionSettingManager`1.Suggestions">
+            <summary>
+                Suggestions for the list
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.CollectionSettingManager`1.EnableSuggestions">
+            <summary>
+            Whether to enable suggestions
+            </summary>
+        </member>
+        <member name="M:Blast.API.Settings.CollectionSettingManager`1.CheckIsDefault(Blast.Core.Objects.Setting)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.CollectionSettingManager`1.ChangeToDefault(Blast.Core.Objects.Setting)">
+            <inheritdoc />
+        </member>
+        <member name="P:Blast.API.Settings.CollectionSettingManager`1.GetSettingsControlBuilder">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.CollectionSettingManager`1.GetSuggestionsControl(Blast.Core.Objects.Setting)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.CollectionSettingManager`1.MigrateSetting(System.Object,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Settings.GenericTypeControlBuilder">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.GenericTypeControlBuilder.#ctor(System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IReadOnlyCollection{System.String})">
+            <summary>
+            
+            </summary>
+            <param name="translations"></param>
+            <param name="ignoredProperties"></param>
+        </member>
+        <member name="P:Blast.API.Settings.GenericTypeControlBuilder.GetSettingViewMode">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.GenericTypeControlBuilder.CreateNewControl(Blast.Core.Objects.Setting)">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Settings.HotkeySettingManager">
+            <inheritdoc />
+        </member>
+        <member name="P:Blast.API.Settings.HotkeySettingManager.EnableSuggestions">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.HotkeySettingManager.CheckIsDefault(Blast.Core.Objects.Setting)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.HotkeySettingManager.ChangeToDefault(Blast.Core.Objects.Setting)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.HotkeySettingManager.GetSuggestionsControl(Blast.Core.Objects.Setting)">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Settings.IconGlyphSelector.IconGlyphSelectorButton">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Settings.IconGlyphSelector.PreviewImageControl">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Settings.IconGlyphSelector.PreviewImageSelectorButton">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.IconGlyphSelector.PreviewImageSelectorButton.OnGotFocus(Avalonia.Input.GotFocusEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Settings.IconGlyphSelector.SymbolDataConverter">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.IconGlyphSelector.SymbolDataConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.IconGlyphSelector.SymbolDataConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Settings.IconGlyphSelector.IconGlyphSelectorControl">
+            <inheritdoc />
+        </member>
+        <member name="F:Blast.API.Settings.IconGlyphSelector.IconGlyphSelectorControl.SelectedIconGlyphProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.IconGlyphSelector.IconGlyphSelectorControl.AllIcons">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Blast.API.Settings.IconGlyphSelector.IconGlyphSelectorControl.IconGlyphsProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Blast.API.Settings.IconGlyphSelector.IconGlyphSelectorControl.IconSearchProperty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.IconGlyphSelector.IconGlyphSelectorControl.IconGlyphs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.IconGlyphSelector.IconGlyphSelectorControl.SelectedIconGlyph">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.IconGlyphSelector.IconGlyphSelectorControl.IconSearch">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Blast.API.Settings.SelectionItem">
+            <inheritdoc cref="T:Avalonia.Controls.ISelectable" />
+        </member>
+        <member name="M:Blast.API.Settings.SelectionItem.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Settings.MultiListSelection">
+            <summary>
+            Setting for multiple selected items
+            </summary>
+        </member>
+        <member name="M:Blast.API.Settings.MultiListSelection.#ctor(Blast.API.Settings.MultiListSelection)">
+            <summary>
+            For copying
+            </summary>
+            <param name="multiListSelection"></param>
+        </member>
+        <member name="E:Blast.API.Settings.MultiListSelection.PropertyChanged">
+            <inheritdoc />
+        </member>
+        <member name="P:Blast.API.Settings.MultiListSelection.Items">
+            <summary>
+                The items that can be selected
+            </summary>
+        </member>
+        <member name="M:Blast.API.Settings.MultiListSelection.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.MultiListSelection.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Settings.ListSelection">
+            <summary>
+                Setting for list selection (combo box)
+            </summary>
+        </member>
+        <member name="M:Blast.API.Settings.ListSelection.#ctor">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Blast.API.Settings.ListSelection.#ctor(Blast.API.Settings.ListSelection)">
+            <summary>
+            </summary>
+            <param name="listSelection"></param>
+        </member>
+        <member name="P:Blast.API.Settings.ListSelection.Items">
+            <summary>
+                The items that can be selected
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.ListSelection.SelectedItem">
+            <summary>
+                The selected item
+            </summary>
+        </member>
+        <member name="E:Blast.API.Settings.ListSelection.PropertyChanged">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.ListSelection.Equals(Blast.API.Settings.ListSelection)">
+            <summary>
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Settings.ListSelection.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.ListSelection.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.ListSelection.OnPropertyChanged(System.String)">
+            <summary>
+            </summary>
+            <param name="propertyName"></param>
+        </member>
+        <member name="T:Blast.API.Settings.SearchApplicationSettingsPage">
+            <inheritdoc cref="T:Blast.Core.Objects.SettingPage" />
+            <summary>
+                Search application default settings, used for setting global hotkeys
+            </summary>
+        </member>
+        <member name="F:Blast.API.Settings.SearchApplicationSettingsPage.SearchAllDescription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Blast.API.Settings.SearchApplicationSettingsPage.SearchProcessDescription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.SearchApplicationSettingsPage.SuggestedHotkeySearchAll">
+            <summary>
+            Suggested hotkeys for the Search All hotkey setting
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.SearchApplicationSettingsPage.SuggestedHotkeySearchProcess">
+            <summary>
+            Suggested hotkeys for the Search Process hotkey setting
+            </summary>
+        </member>
+        <member name="M:Blast.API.Settings.SearchApplicationSettingsPage.#ctor(Blast.Core.Objects.SearchApplicationInfo,System.Collections.Generic.List{Blast.API.Core.Controllers.Keyboard.VirtualKey},System.Collections.Generic.List{Blast.API.Core.Controllers.Keyboard.VirtualKey},System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Settings.SearchApplicationSettingsPage.#ctor(Blast.Core.Objects.SearchApplicationInfo,Blast.API.Core.Hotkeys.Hotkey,Blast.API.Core.Hotkeys.Hotkey,System.String,System.Boolean)">
+            <summary>
+                Creates new settings page for the specified search application
+            </summary>
+            <param name="searchApplicationInfo"></param>
+            <param name="hotkeyForSearchAll">Search application hotkey for opening the search all window</param>
+            <param name="hotkeyForSearchProcess">Search application hotkey for opening the search process window</param>
+            <param name="iconGlyph">The preview image of the search application</param>
+            <param name="addSearchProcess">Whether to add the Search Process hotkey to settings</param>
+        </member>
+        <member name="P:Blast.API.Settings.SearchApplicationSettingsPage.CanDisable">
+            <summary>
+                Whether you can disable this app
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.SearchApplicationSettingsPage.EnableApplication">
+            <summary>
+                Whether to enable this search application
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.SearchApplicationSettingsPage.SearchTagOnly">
+            <summary>
+                Whether this search app will return results only for searches with tag
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.SearchApplicationSettingsPage.HotkeyForSearchAll">
+            <summary>
+                The search all hotkey
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.SearchApplicationSettingsPage.HotkeyForSearchProcess">
+            <summary>
+                Search in process hotkey
+            </summary>
+        </member>
+        <member name="T:Blast.API.Settings.SettingChangeSearchOperation">
+            <summary>
+            Search operation for changing setting value
+            </summary>
+        </member>
+        <member name="M:Blast.API.Settings.SettingChangeSearchOperation.#ctor(Blast.Core.Objects.Setting,System.Object)">
+            <inheritdoc />
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.Settings.SettingsUtils" -->
+        <member name="F:Blast.API.Settings.SettingsUtils.SettingsPath">
+            <summary>
+            Settings folder name
+            </summary>
+        </member>
+        <member name="F:Blast.API.Settings.SettingsUtils.CompactSettingParameter">
+            <summary>
+            Setting parameter for getting a compact setting
+            </summary>
+        </member>
+        <member name="F:Blast.API.Settings.SettingsUtils.SettingComponents">
+            <summary>
+                Dictionary for supported setting types, each type must have a component builder
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.SettingsUtils.AppDataDirectory">
+            <summary>
+                The app data directory of Fluent Search (all settings and states saved here)
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.SettingsUtils.IsUpFirstTime">
+            <summary>
+                Whether the system is up for the first time
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.SettingsUtils.SettingsControls">
+            <summary>
+                Maps the current control objects for all shown settings
+            </summary>
+        </member>
+        <member name="M:Blast.API.Settings.SettingsUtils.LoadSettings(Blast.Core.Interfaces.ISettingsPage,System.Boolean,System.String,System.IO.Stream,System.Boolean,System.Boolean)">
+            <summary>
+                Loads the specified settings from it's file, if it does not exist it will create one in the settings folder
+            </summary>
+            <param name="settingsPage"></param>
+            <param name="configureAwait"></param>
+            <param name="customPath"></param>
+            <param name="fileStream"></param>
+            <param name="isSync"></param>
+            <param name="runSynchronousMethods"></param>
+            <returns>The loaded setting</returns>
+        </member>
+        <member name="M:Blast.API.Settings.SettingsUtils.GetSettingPageFilePath(Blast.Core.Interfaces.ISettingsPage)">
+            <summary>
+            Get the file path of a setting page
+            </summary>
+        </member>
+        <member name="E:Blast.API.Settings.SettingsUtils.OnSettingPageSaved">
+            <summary>
+            Occurs when a setting page changed
+            </summary>
+        </member>
+        <member name="M:Blast.API.Settings.SettingsUtils.RevertSettingToDefault(Blast.Core.Objects.Setting)">
+            <summary>
+            Reverts the setting to default
+            </summary>
+            <param name="setting"></param>
+        </member>
+        <member name="M:Blast.API.Settings.SettingsUtils.SaveSettings(Blast.Core.Interfaces.ISettingsPage,System.Boolean)">
+            <summary>
+                Saves the specified settings page in the settings folder
+            </summary>
+            <param name="settingsPage">The specified settings page</param>
+            <param name="runAsync"></param>
+        </member>
+        <member name="M:Blast.API.Settings.SettingsUtils.TryGetControlBuilderForType(System.Type,Blast.Core.Settings.ISettingControlBuilder@)">
+            <summary>
+                Tries to get the control builder for the sepcified type
+            </summary>
+            <param name="settingType"></param>
+            <param name="componentBuilder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Settings.SettingsUtils.GetControlForSetting(Blast.Core.Interfaces.ISettingsPage,System.String)">
+            <summary>
+                Gets the control for the setting
+            </summary>
+            <param name="settingPage"></param>
+            <param name="settingName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Settings.SettingsUtils.GetExistingControlForSetting(Blast.Core.Objects.Setting)">
+            <summary>
+            Gets the existing control for the setting in the Settings window
+            Returns null if it's not displayed
+            </summary>
+            <param name="setting"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Settings.SettingsUtils.GetControlForSetting(Blast.Core.Objects.Setting)">
+            <summary>
+                Gets the control for the setting
+            </summary>
+            <param name="setting"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Settings.SettingsUtils.GetSearchOperationsForSetting(Blast.Core.Objects.Setting,Blast.Core.Interfaces.ISearchResult)">
+            <summary>
+                Gets the control for the setting
+            </summary>
+            <param name="setting"></param>
+            <param name="searchResult"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Settings.SettingsUtils.OpenSetting(Blast.Core.Objects.Setting)">
+            <summary>
+            Opens the setting in the Settings window
+            </summary>
+            <param name="setting"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Settings.SettingsUtils.UpdateSettingControl(Blast.Core.Objects.Setting)">
+            <summary>
+                Updates the control for a setting
+            </summary>
+            <param name="setting"></param>
+            <returns></returns>
+        </member>
+        <member name="E:Blast.API.Settings.SettingsUtils.OpenSettingRequested">
+            <summary>
+            Invoke to open a setting in the Settings page
+            </summary>
+        </member>
+        <member name="M:Blast.API.Settings.SettingsUtils.GetOrCreateSemaphoreSlim(System.String)">
+            <summary>
+            Creates semaphore for the settings page name
+            </summary>
+            <param name="settingsPageName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Blast.API.Settings.SettingsUtils.KeyGestureConverter">
+            <summary>
+                <see cref="T:System.Text.Json.Serialization.JsonConverter`1" /> for converting Avalonia <see cref="T:Avalonia.Input.KeyGesture" />
+            </summary>
+        </member>
+        <member name="T:Blast.API.Settings.SuggestedItem`1">
+            <summary>
+                Suggested item used by <see cref="T:Blast.API.Settings.CollectionSettingManager`1" />
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Blast.API.Settings.SuggestedItem`1.#ctor(System.String,`0,System.String,Blast.Core.Results.BitmapImageResult)">
+            <summary>
+                Creates new suggested item
+            </summary>
+            <param name="name"></param>
+            <param name="value"></param>
+            <param name="iconGlyph"></param>
+            <param name="bitmapImageResult"></param>
+        </member>
+        <member name="P:Blast.API.Settings.SuggestedItem`1.Name">
+            <summary>
+                Suggested item's display name
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.SuggestedItem`1.UseIconGlyph">
+            <inheritdoc />
+        </member>
+        <member name="P:Blast.API.Settings.SuggestedItem`1.IconGlyph">
+            <summary>
+                Icon glyph, can be empty
+            </summary>
+        </member>
+        <member name="P:Blast.API.Settings.SuggestedItem`1.PreviewImage">
+            <inheritdoc />
+        </member>
+        <member name="P:Blast.API.Settings.SuggestedItem`1.Value">
+            <summary>
+                The value
+            </summary>
+        </member>
+        <member name="T:Blast.API.Tasks.EmptyModelOperationBuilder">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.EmptyModelOperationBuilder.#ctor(System.String,System.String,Blast.Core.Tasks.TaskType,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.EmptyModelOperationBuilder.CreateControlBuilder(System.Object,System.Collections.Generic.IReadOnlyList{Blast.Core.Tasks.VariableType})">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.EmptyModelOperationBuilder.CreateDescriptorControl(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.EmptyModelOperationBuilder.CreateOrCloneModel(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Tasks.SearchOperationTriggerOperationSubscription">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.SearchOperationTriggerOperationSubscription.#ctor(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.SearchOperationTriggerOperationSubscription.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Tasks.EmptyTriggerOperationSubscription">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.EmptyTriggerOperationSubscription.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="P:Blast.API.Tasks.EmptyTriggerOperationSubscription.IsDisposed">
+            <summary>
+            Whether the subscription is disposed, used for debugging
+            </summary>
+        </member>
+        <member name="E:Blast.API.Tasks.EmptyTriggerOperationSubscription.Triggered">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.EmptyTriggerOperationSubscription.OnTriggered(Blast.Core.Tasks.TriggerEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Tasks.EmptyTriggerOperationSubscription.Clone">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Tasks.GenericOperationBuilder`1">
+            <summary>
+            Generic task operation builder based on properties of <see cref="!:T"/>
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Blast.API.Tasks.GenericOperationBuilder`1.#ctor(System.String,System.String,Blast.Core.Tasks.TaskType,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.GenericOperationBuilder`1.RunOperationTask(System.Object,Blast.Core.Tasks.TriggerEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.GenericOperationBuilder`1.RunOperationTask(`0,Blast.Core.Tasks.TriggerEventArgs)">
+            <summary>
+            Runs the operation task using the defined model type
+            </summary>
+            <param name="model"></param>
+            <param name="triggerEventArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Blast.API.Tasks.GenericTriggerOperationBuilder`1">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.GenericTriggerOperationBuilder`1.#ctor(System.String,System.String,Blast.Core.Tasks.TaskType,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.GenericTriggerOperationBuilder`1.CreateAndRegister(System.Object,Blast.Core.Tasks.TriggerEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.GenericTriggerOperationBuilder`1.CreateAndRegister(`0,Blast.Core.Tasks.TriggerEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="model"></param>
+            <param name="triggerEventArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Tasks.GenericTriggerOperationBuilder`1.RunOperationTask(System.Object,Blast.Core.Tasks.TriggerEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.GenericTriggerOperationBuilder`1.RunOperationTask(`0,Blast.Core.Tasks.TriggerEventArgs)">
+            <summary>
+            Runs the operation task using the defined model type
+            </summary>
+            <param name="model"></param>
+            <param name="triggerEventArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Blast.API.Tasks.TriggerEventHandler">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Tasks.ITriggerOperationSubscription">
+            <summary>
+            Search trigger subscription
+            </summary>
+        </member>
+        <member name="E:Blast.API.Tasks.ITriggerOperationSubscription.Triggered">
+            <summary>
+            Occurs when the trigger happens
+            </summary>
+        </member>
+        <member name="T:Blast.API.Tasks.OperationBuilder">
+            <summary>
+            Task builder base
+            </summary>
+        </member>
+        <member name="M:Blast.API.Tasks.OperationBuilder.#ctor(System.String,System.String,Blast.Core.Tasks.TaskType,System.String,System.Type)">
+            <summary>
+            Creates a new instance of <see cref="T:Blast.API.Tasks.OperationBuilder"/>
+            </summary>
+            <param name="name"></param>
+            <param name="description"></param>
+            <param name="category"></param>
+            <param name="iconGlyph"></param>
+            <param name="modelType"></param>
+        </member>
+        <member name="F:Blast.API.Tasks.OperationBuilder.SettingName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilder.Name">
+            <summary>
+            The unique operation name
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilder.DisplayedName">
+            <summary>
+            The displayed name in the Tasks window
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilder.UniqueId">
+            <summary>
+            Unique Id of this builder
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilder.Version">
+            <summary>
+            The version fo this operation builder
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilder.ModelType">
+            <summary>
+            The model type
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilder.Description">
+            <summary>
+            The trigger description
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilder.Category">
+            <summary>
+            The operation category
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilder.IconGlyph">
+            <summary>
+            Icon glyph
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilder.CanConnectTo">
+            <summary>
+            Whether a connection can be made to this
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilder.ContinueOnOperations">
+            <summary>
+            Whether to force continuing on operations, even if this is a trigger operation
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilder.DefaultVariableDefinitions">
+            <summary>
+            The default recommended variable definitions
+            </summary>
+        </member>
+        <member name="M:Blast.API.Tasks.OperationBuilder.CreateControlBuilder(System.Object,System.Collections.Generic.IReadOnlyList{Blast.Core.Tasks.VariableType})">
+            <summary>
+            Creates the builder control
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Tasks.OperationBuilder.CreateDescriptorControl(System.Object)">
+            <summary>
+            Creates a descriptor control to show in the card
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Tasks.OperationBuilder.CreateOrCloneModel(System.Object)">
+            <summary>
+            Creates or clones the specified model if it's not null
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Tasks.OperationBuilder.MigrateModel(System.Object,System.Version,YamlDotNet.Serialization.IDeserializer,YamlDotNet.Serialization.ISerializer)">
+            <summary>
+            Migrate the model object based on the version
+            </summary>
+        </member>
+        <member name="M:Blast.API.Tasks.OperationBuilder.LoadModel(System.Object,System.Collections.Generic.HashSet{System.String})">
+            <summary>
+            Executed when a model is saved or loaded
+            </summary>
+            <param name="model"></param>
+            <param name="variables"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilder.OperationResultType">
+            <summary>
+            The operation result type
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilder.OperationCsharpResultType">
+            <summary>
+            The operation <see cref="T:System.Type"/>
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilder.OperationResultProperties">
+            <summary>
+            When returning operation result of Object, set this to let the user know what he can do with the object
+            </summary>
+        </member>
+        <member name="M:Blast.API.Tasks.OperationBuilder.RunOperationTask(System.Object,Blast.Core.Tasks.TriggerEventArgs)">
+            <summary>
+            Creates operation based on model from the Control's data context
+            </summary>
+            <param name="model"></param>
+            <param name="triggerEventArgs"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Blast.API.Tasks.SearchOperationOperationBuilder">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.SearchOperationOperationBuilder.#ctor(System.String,Blast.Core.Interfaces.ISearchOperation,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Tasks.SearchOperationOperationBuilder`1">
+            <summary>
+            Search operation based task builder with string parameter
+            </summary>
+        </member>
+        <member name="M:Blast.API.Tasks.SearchOperationOperationBuilder`1.#ctor(System.String,Blast.Core.Interfaces.ISearchOperation,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.SearchOperationOperationBuilder`1.CreateAndRegister(Blast.API.Tasks.SearchOperationOperationBuilder{`0}.SearchOperationModel,Blast.Core.Tasks.TriggerEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.SearchOperationOperationBuilder`1.RunOperationTask(Blast.API.Tasks.SearchOperationOperationBuilder{`0}.SearchOperationModel,Blast.Core.Tasks.TriggerEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.SearchOperationOperationBuilder`1.AddCustomOperation(Blast.Core.Interfaces.ISearchResult,Blast.API.Tasks.TaskFuncSearchOperation)">
+            <summary>
+            Adds or updates the function operation to the ISearchResult operations o
+            </summary>
+            <param name="searchResult"></param>
+            <param name="funcSearchOperation"></param>\
+        </member>
+        <member name="T:Blast.API.Tasks.SearchOperationOperationBuilder`1.SearchOperationModel">
+            <summary>
+            Model for search operation
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.SearchOperationOperationBuilder`1.SearchOperationModel.Value">
+            <summary>
+            Input value
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.SearchOperationOperationBuilder`1.SearchOperationModel.RequireConfirmation">
+            <summary>
+            Whether this operation requires confirmation
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.SearchOperationOperationBuilder`1.SearchOperationModel.TriggerAnywhere">
+            <summary>
+            Whether this can trigger anywhere regardless of the input
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.SearchOperationOperationBuilder`1.SearchOperationModel.KeyGesture">
+            <summary>
+            Key gesture for invokation
+            </summary>
+        </member>
+        <member name="M:Blast.API.Tasks.SearchOperationOperationBuilder`1.SearchOperationModel.ToString">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Tasks.SearchOperationSubscription">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.SearchOperationSubscription.#ctor(Blast.Core.Interfaces.ISearchOperation,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="searchOperation"></param>
+            <param name="triggerValue"></param>
+        </member>
+        <member name="M:Blast.API.Tasks.SearchOperationSubscription.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="E:Blast.API.Tasks.SearchOperationSubscription.Triggered">
+            <inheritdoc />
+        </member>
+        <member name="T:Blast.API.Tasks.TaskFuncSearchOperation">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.TaskFuncSearchOperation.#ctor(System.String,System.String,System.String,System.Action)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.TaskFuncSearchOperation.#ctor(System.String,System.String,System.String,System.Action,System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.TaskFuncSearchOperation.#ctor(System.String,System.String,System.String,System.Func{System.Threading.Tasks.Task})">
+            <inheritdoc />
+        </member>
+        <member name="P:Blast.API.Tasks.TaskFuncSearchOperation.Position">
+            <summary>
+            The position based on tasks
+            </summary>
+        </member>
+        <member name="T:Blast.API.Tasks.TriggerOperationBuilder">
+            <summary>
+            A search trigger
+            </summary>
+        </member>
+        <member name="M:Blast.API.Tasks.TriggerOperationBuilder.#ctor(System.String,System.String,Blast.Core.Tasks.TaskType,System.String,System.Type)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.TriggerOperationBuilder.RunOperationTask(System.Object,Blast.Core.Tasks.TriggerEventArgs)">
+            <inheritdoc />
+        </member>
+        <member name="M:Blast.API.Tasks.TriggerOperationBuilder.CreateAndRegister(System.Object,Blast.Core.Tasks.TriggerEventArgs)">
+            <summary>
+            Creates search trigger based on model from the Control's data context
+            </summary>
+            <param name="model"></param>
+            <param name="triggerEventArgs"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Blast.API.Tasks.TaskUtils" -->
+        <member name="T:Blast.API.Tasks.OperationBuilderManager">
+            <summary>
+            Contains all the known triggers
+            </summary>
+        </member>
+        <member name="P:Blast.API.Tasks.OperationBuilderManager.OperationBuilders">
+            <summary>
+            All known search trigger builders
+            </summary>
+        </member>
+        <member name="M:Blast.API.Tasks.OperationBuilderManager.TryGetOperationBuilder(System.String,Blast.API.Tasks.OperationBuilder@)">
+            <summary>
+            Tries to get the operation builder using the specified name
+            </summary>
+            <param name="uniqueId"></param>
+            <param name="operationBuilder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Tasks.OperationBuilderManager.TryRegisterBuilder(Blast.API.Tasks.OperationBuilder)">
+            <summary>
+            Try to add the specified builder to known list
+            </summary>
+            <param name="operationBuilder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blast.API.Tasks.OperationBuilderManager.GetAll">
+            <summary>
+            Get all available operation builders
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
